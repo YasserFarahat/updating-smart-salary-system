@@ -1,0 +1,11 @@
+export default function Home() {
+  return (
+    <main style={{ padding: 40 }}>
+      <h1>SmartComp AI 💼</h1>
+      <p>AI-powered salary intelligence platform</p>
+
+      <a href="/dashboard">
+        <button>Start Now</button>
+      </a>
+    </main>
+  );
