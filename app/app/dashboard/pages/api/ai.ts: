@@ -1,0 +1,24 @@
+export async function analyzeCandidate(data: any, salary: number) {
+  const prompt = `
+You are an HR expert.
+
+Candidate:
+- Experience: ${data.experience}
+- Skills: ${data.skillsScore}
+- Interview: ${data.interviewScore}
+
+Salary: ${salary}
+
+Return:
+1. Market Position (Low / Average / High)
+2. Salary fairness
+3. Recommendation (negotiate / accept / improve skills)
+`;
+
+  const res = await client.chat.completions.create({
+    model: "gpt-4o-mini",
+    messages: [{ role: "user", content: prompt }]
+  });
+
+  return res.choices[0].message.content;
+}
