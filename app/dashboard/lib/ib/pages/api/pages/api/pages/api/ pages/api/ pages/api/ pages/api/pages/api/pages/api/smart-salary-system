@@ -1,0 +1,21 @@
+smartcomp-ai/
+│
+├── app/
+│   ├── page.tsx
+│   └── dashboard/page.tsx
+│
+├── components/
+│   └── Form.tsx
+│
+├── lib/
+│   ├── salaryEngine.ts
+│   └── ai.ts
+│
+├── pages/api/
+│   ├── calculate.ts
+│   ├── report.ts
+│   └── save.ts
+│
+├── package.json
+├── .env.local
+└── next.config.js
